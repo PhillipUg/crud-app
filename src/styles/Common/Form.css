@@ -1,0 +1,26 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.form__create {
+    align-items: center;
+    justify-content: center;
+}
+
+.form__update {
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+}
+
+.form__input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

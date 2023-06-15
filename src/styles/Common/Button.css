@@ -1,0 +1,45 @@
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button__create {
+    background-color: #4CAF50;
+}
+
+.button__create:hover {
+    background-color: #2f6a2f;
+}
+
+.button__delete {
+    background-color: #f44336;
+}
+
+.button__delete:hover {
+    background-color: #a92828;
+}
+
+.button__update {
+    background-color: #008CBA;
+}
+
+.button__update:hover {
+    background-color: #006380;
+}
+
+.button__cancel {
+    background-color: #555555;
+}
+
+.button__cancel:hover {
+    background-color: #2b2b2b;
+}

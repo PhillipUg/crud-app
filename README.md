@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# User Management Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple User Management Application built with React and Redux Toolkit. It allows you to create, read, update and delete (CRUD) users. Redux Toolkit is used for state management, and JSON Server is used as a mock back-end.
 
-## Available Scripts
+## Application Structure
 
-In the project directory, you can run:
+The application is divided into several main parts:
 
-### `npm start`
+- **Components**: This is where the React components for the application live. They are divided into `UserList`, `AddUser`, `UpdateUser`, and `DeleteUser` components.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **API**: This folder contains the API calls to the JSON Server.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Redux**: This folder houses all the Redux related code including the store configuration and the slice for managing the user state.
 
-### `npm test`
+- **Styles**: This folder houses all the styles for the different components in our application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **App.js**: This is the main application file where all the components are assembled.
 
-### `npm run build`
+## Installation and Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To install and run this application:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository to your local machine using `git clone <repository-url>`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Navigate to the project directory `cd user-management-app`.
 
-### `npm run eject`
+3. Install the necessary dependencies with `npm install`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Make sure to install JSON Server globally if you haven't done so yet, using `npm install -g json-server`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Run the JSON Server on port 4000 with `json-server --watch db.json --port 4000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+6. Start the application with `npm start`. The application should now be running on `localhost:3000`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+The application is easy to use:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- On the homepage, you will see a list of all users. If there are no users, the list will be empty.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- To create a new user, click on the 'Add User' button, fill in the form and submit.
 
-### Code Splitting
+- To update a user, click on the 'Update' button beside a user, modify the fields as needed and submit.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- To delete a user, click on the 'Delete' button beside a user.
 
-### Analyzing the Bundle Size
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+[MIT](https://choosealicense.com/licenses/mit/)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+Please feel free to modify this README according to your application's requirements or any additional features you implemented. Remember, a good README should effectively communicate your project's purpose and functionality.
